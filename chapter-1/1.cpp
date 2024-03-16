@@ -11,7 +11,11 @@ int main()
 	std::cout << " and ";
 	std::cout << v2;
 	std::cout << " is ";
-	std::cout << v1 * v2;
-	std::cout << std::endl;
+		  << v1 * v2;
+		  << std::endl;
+	// Not legal.
+	// error: expected primary-expression before ‘<<’ token
+	// << is intended to be an output stream operator in this specific context.
+	// Prepend std::cout to fix.
 	return 0;
 }
