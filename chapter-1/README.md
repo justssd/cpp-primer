@@ -13,3 +13,13 @@ $ echo $?
 // Wrong
 #include <iostream.h>
 ```
+
+# Testing ```diff``` language tag to generate colored text
+
+```diff
+- red
++ green
+! orange
+# gray
+@@ purple and bold @@
+```
