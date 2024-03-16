@@ -2,10 +2,12 @@
 
 int main()
 {
-	int val = 10;
-	while (val >= 0) {
-		std::cout << val << std::endl;
-		--val;
+	int a = 0, b = 0;
+	std::cout << "Enter two integers:" << std::endl;
+	std::cin >> a >> b;
+	while (a <= b) {
+		std::cout << a << std::endl;
+		++a;
 	}
 	return 0;
 }
