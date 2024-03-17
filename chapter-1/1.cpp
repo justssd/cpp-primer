@@ -2,9 +2,14 @@
 
 int main()
 {
-	int sum = 0;
-	// read until end-of-file, calculating a running total of all values read
-	for (int val = 0; std::cin >> val; sum += val);
-	std::cout << "Sum is: " << sum << std::endl;
+	int a = 0, b = 0;
+	std::cout << "Enter two integers:" << std::endl;
+	std::cin >> a >> b;
+	if (a < b) {
+		while (a <= b) {
+			std::cout << a << std::endl;
+			++a;
+		}
+	}
 	return 0;
 }
