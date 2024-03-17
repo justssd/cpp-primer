@@ -45,3 +45,8 @@ std::cout << /* "*/" /* "/*" */; is legal. Writes " /* " to the ostream.
 std::ccout << /* "*/" */; is not legal. Add quote at end to fix.
 std::cout << /* "*/" */"; is legal.
 ```
+
+# 1.4
+
+Checkout [1](https://en.cppreference.com/w/cpp/io/basic_ios/operator_bool) [2](https://stackoverflow.com/questions/38978266/how-can-stdcin-return-a-bool-and-itself-at-the-same-time) for details on the operator bool and on why placing std::cin as a boolean works.
+
