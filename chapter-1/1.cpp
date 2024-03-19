@@ -1,15 +1,20 @@
 #include <iostream>
+#include "Sales_item.h"
 
 int main()
 {
-	int a = 0, b = 0;
-	std::cout << "Enter two integers:" << std::endl;
-	std::cin >> a >> b;
-	if (a < b) {
-		while (a <= b) {
-			std::cout << a << std::endl;
-			++a;
+	Sales_item total, book;
+	if (std::cin >> total) {
+		while (std::cin >> book) {
+			if (book.isbn() == total.isbn()) {
+				total += book;
+			}
+			else {
+				std::cout << total << std::endl;
+				total = book;
+			}	
 		}
+		std::cout << total << std::endl;
 	}
 	return 0;
 }
